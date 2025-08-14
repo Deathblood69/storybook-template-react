@@ -1,4 +1,4 @@
-import {TaskData} from "../types/TaskData.ts";
+import { TaskData } from "../types/TaskData.ts";
 
 type TaskProps = {
   /** Composition of the task */
@@ -10,10 +10,10 @@ type TaskProps = {
 };
 
 export default function Task({
-                               task: {id, title, state},
-                               onArchiveTask,
-                               onPinTask,
-                             }: TaskProps) {
+  task: { id, title, state },
+  onArchiveTask,
+  onPinTask,
+}: TaskProps) {
   return (
     <div className={`list-item ${state}`}>
       <label
@@ -28,9 +28,9 @@ export default function Task({
           id={`archiveTask-${id}`}
           checked={state === "TASK_ARCHIVED"}
         />
-        <span className="checkbox-custom" onClick={() => onArchiveTask(id)}/>
+        <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
       </label>
-      
+
       <label htmlFor={`title-${id}`} aria-label={title} className="title">
         <input
           type="text"
@@ -49,7 +49,7 @@ export default function Task({
           aria-label={`pinTask-${id}`}
           key={`pinTask-${id}`}
         >
-          <span className={`icon-star`}/>
+          <span className={`icon-star`} />
         </button>
       )}
     </div>

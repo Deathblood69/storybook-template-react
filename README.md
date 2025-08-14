@@ -20,7 +20,7 @@ This template ships with the main React and Storybook configuration files you'll
     # Install the dependencies
     npm install
     ```
-    
+
 1.  **Browse your stories!**
 
     Run `npm run storybook` to see your component's stories at http://localhost:6006

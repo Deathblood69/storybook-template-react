@@ -1,8 +1,8 @@
-import type {Meta, StoryObj} from '@storybook/react-vite';
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import {fn} from 'storybook/test';
+import { fn } from "storybook/test";
 
-import Task from './Task';
+import Task from "./Task";
 
 export const ActionsData = {
   onArchiveTask: fn(),
@@ -11,8 +11,8 @@ export const ActionsData = {
 
 const meta = {
   component: Task,
-  title: 'Task',
-  tags: ['autodocs'],
+  title: "Task",
+  tags: ["autodocs"],
   //👇 Our exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,
   args: {
@@ -26,9 +26,9 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     task: {
-      id: '1',
-      title: 'Test Task',
-      state: 'TASK_INBOX',
+      id: "1",
+      title: "Test Task",
+      state: "TASK_INBOX",
     },
   },
 };
@@ -37,7 +37,7 @@ export const Pinned: Story = {
   args: {
     task: {
       ...Default.args.task,
-      state: 'TASK_PINNED',
+      state: "TASK_PINNED",
     },
   },
 };
@@ -46,7 +46,7 @@ export const Archived: Story = {
   args: {
     task: {
       ...Default.args.task,
-      state: 'TASK_ARCHIVED',
+      state: "TASK_ARCHIVED",
     },
   },
 };

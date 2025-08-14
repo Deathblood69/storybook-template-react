@@ -1,1 +1,1 @@
-export type {TaskData} from './TaskData'
+export type { TaskData } from "./TaskData";
