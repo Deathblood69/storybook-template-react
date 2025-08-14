@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -8,10 +7,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 100%;
   outline: none;
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: 400;
   color: #333;
   font-size: 16px;
   background-color: #26c6da;
@@ -30,13 +27,10 @@ label {
   font-weight: normal;
   font-style: normal;
   font-size: 100%;
-  line-height: 1;
   font-family: inherit;
-  vertical-align: baseline;
   vertical-align: middle;
   line-height: normal;
   overflow: visible;
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 button::-moz-focus-inner,
@@ -119,9 +113,7 @@ input[type="email"],
 input[type="password"],
 textarea {
   font-size: 14px;
-  line-height: 20px;
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: 400;
   padding: 0.75rem 0;
   line-height: 1.5rem !important;
   border: none;
@@ -161,11 +153,9 @@ textarea {
 
 .checkbox input[type="checkbox"]:checked + span:before {
   font-size: 16px;
-  line-height: 24px;
   box-shadow: none;
   color: #2cc5d2;
   margin-top: -1px;
-  font-family: "percolate";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -230,8 +220,6 @@ textarea {
 
 [class^="icon-"],
 [class*=" icon-"] {
-  font-family: "percolate";
-
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -314,6 +302,7 @@ textarea {
 .pin-button:hover {
   color: #2cc5d2;
 }
+
 .pin-button:focus {
   outline-color: transparent;
 }
@@ -327,7 +316,7 @@ textarea {
 }
 
 .list-item.TASK_ARCHIVED input[type="text"] {
-  color: #a0aec0;
+  color: #4a5568;
   text-decoration: line-through;
 }
 
@@ -445,7 +434,6 @@ textarea {
 
 .page.lists-show nav .title-page {
   font-size: 20px;
-  line-height: 24px;
   line-height: 2rem;
   cursor: pointer;
   white-space: nowrap;
