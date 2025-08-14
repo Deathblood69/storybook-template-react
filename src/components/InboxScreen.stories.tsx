@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type {Meta, StoryObj} from '@storybook/react-vite';
 
 import InboxScreen from './InboxScreen';
 
@@ -15,7 +15,7 @@ import {
   waitFor,
   within,
   waitForElementToBeRemoved
-} from '@storybook/test';
+} from 'storybook/test';
 
 const meta = {
   component: InboxScreen,
